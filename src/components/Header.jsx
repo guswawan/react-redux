@@ -21,8 +21,8 @@ export const Header = () => {
         </div>
         <Separator orientation="vertical h-full" />
         <div className="space-x-2">
-          <Button>Log In</Button>
-          <Button variant="outline">Sign Up</Button>
+          <Button size="lg">Log In</Button>
+          <Button variant="link">Sign Up</Button>
         </div>
       </div>
     </header>
