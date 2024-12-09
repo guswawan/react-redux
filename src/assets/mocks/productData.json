@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "adidas Y3 Japan 2024 - Man's",
+    "price": 999000,
+    "stock": 7,
+    "imageUrl": "https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJAPAN%2520Y3%2520HOME%25201.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=750&q=50"
+  },
+  {
+    "id": 2,
+    "name": "adidas Japan Y-3 2024 Away Jersey - Man's",
+    "price": 850000,
+    "stock": 10,
+    "imageUrl": "https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJAPAN%2520y3%2520Away.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=1200&q=50"
+  },
+  {
+    "id": 3,
+    "name": "adidas Japan Y-3 2024 Away Jersey - Youth",
+    "price": 550000,
+    "stock": 3,
+    "imageUrl": "https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJAPAN%2520y3%2520Away.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=1200&q=50"
+  }
+]
