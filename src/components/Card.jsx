@@ -7,10 +7,10 @@ export const Card = ({ name, price, imageUrl, stock }) => {
         <img src={imageUrl} alt="image-product" />
       </div>
       <div className="border-t-2 p-2 leading-loose flex flex-col justify-between">
-        <p className="text-xl font-semibold min-h-[58px] leading-snug">
+        <p className="text-lg font-semibold min-h-[38px] leading-tight">
           {name}
         </p>
-        <p className="mt-3">Rp{price.toLocaleString('id-ID')}</p>
+        <p className="mt-2">Rp{price.toLocaleString('id-ID')}</p>
         <p className="text-xs text-gray-300">In stock: {stock}</p>
       </div>
     </div>
