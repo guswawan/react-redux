@@ -29,7 +29,7 @@ function App() {
             </p>
           </div>
 
-          <div className="flex gap-4">{products}</div>
+          <div className="flex gap-4 mb-4">{products}</div>
         </main>
       </div>
     </>
