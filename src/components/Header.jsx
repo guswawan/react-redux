@@ -2,9 +2,15 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { IoCart, IoHeart } from 'react-icons/io5';
 import { Separator } from './ui/separator';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate('/login');
+  };
+
   return (
     <header className="flex justify-between items-center h-20 px-24 border-b-2">
       <div className="hover:cursor-pointer leading-none">
@@ -33,7 +39,9 @@ export const Header = () => {
         </div>
         <Separator orientation="vertical h-full" />
         <div className="space-x-2">
-          <Button size="lg">Log In</Button>
+          <Button onClick={handleLogin} size="lg">
+            Log In
+          </Button>
           <Button variant="link">Sign Up</Button>
         </div>
       </div>
