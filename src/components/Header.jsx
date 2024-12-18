@@ -1,7 +1,9 @@
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { IoCart, IoHeart } from 'react-icons/io5';
 import { Separator } from './ui/separator';
+import { Link } from 'react-router-dom';
+import IconCart from '@/assets/icons/cart.svg';
+import IconHeart from '@/assets/icons/love.svg';
 
 export const Header = () => {
   return (
@@ -14,16 +16,18 @@ export const Header = () => {
       </div>
       <Input className="max-w-[50%]" placeholder="Search Product..." />
       <div className="flex space-x-4 h-6 items-center">
-        <div>
-          <Button
-            size="icon"
-            variant="transparent"
-            className="hover:scale-150 transition ease-in-out delay-100 duration-300"
-          >
-            <IoCart className="scale-150" />
-          </Button>
+        <div className="space-x-1">
+          <Link to={'/cart'}>
+            <Button
+              size="icon"
+              variant="transparent"
+              className="hover:scale-125 transition ease-in-out delay-100 duration-300"
+            >
+              <img src={IconCart} alt="icon-cart" />
+            </Button>
+          </Link>
           <Button size="icon" variant="ghost">
-            <IoHeart className="scale-150" />
+            <img src={IconHeart} alt="icon-heart" />
           </Button>
         </div>
         <Separator orientation="vertical h-full" />
