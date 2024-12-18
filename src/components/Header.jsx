@@ -31,9 +31,11 @@ export const Header = () => {
               variant="transparent"
               className="hover:scale-125 transition ease-in-out delay-100 duration-300"
             >
-              <img src={IconCart} alt="icon-cart" />
-              className="hover:scale-150 transition ease-in-out delay-100 duration-300"
-            >
+              <img
+                src={IconCart}
+                alt="icon-cart"
+                className="hover:scale-110 transition ease-in-out delay-100 duration-300"
+              />
             </Button>
           </Link>
           <Button size="icon" variant="ghost">
