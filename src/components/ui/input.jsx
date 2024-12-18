@@ -16,11 +16,11 @@ const Input = React.forwardRef(({ className, type, ...props }, ref) => {
   );
 });
 
+Input.displayName = 'Input';
+
 Input.propTypes = {
   className: PropTypes.string,
   type: PropTypes.string,
 };
-
-Input.displayName = 'Input';
 
 export { Input };

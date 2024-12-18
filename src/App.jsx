@@ -1,14 +1,18 @@
-import { Header } from './components/Header';
-import { Button } from './components/ui/button';
+import HomePage from '@/pages/HomePage';
+import NotFoundPage from '@/pages/NotFoundPage';
+import { Route, Routes } from 'react-router-dom';
+import { Header } from '@/components/Header';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
     <>
       <Header />
-      <div className="flex flex-col px-24">
-        <h1 className="text-indigo-500 font-semibold text-5xl">Hello World!</h1>
-        <Button className="w-fit">This btn</Button>
-      </div>
+      <Routes>
+        <Route path="/" Component={HomePage} />
+        <Route path="/login" Component={LoginPage} />
+        <Route path="*" Component={NotFoundPage} />
+      </Routes>
     </>
   );
 }
