@@ -1,7 +1,8 @@
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { IoCart, IoHeart } from 'react-icons/io5';
 import { Separator } from './ui/separator';
+import IconCart from '@/assets/icons/cart.svg';
+import IconHeart from '@/assets/icons/love.svg';
 import { Link, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
@@ -28,13 +29,15 @@ export const Header = () => {
             <Button
               size="icon"
               variant="transparent"
+              className="hover:scale-125 transition ease-in-out delay-100 duration-300"
+            >
+              <img src={IconCart} alt="icon-cart" />
               className="hover:scale-150 transition ease-in-out delay-100 duration-300"
             >
-              <IoCart className="scale-150" />
             </Button>
           </Link>
           <Button size="icon" variant="ghost">
-            <IoHeart className="scale-150" />
+            <img src={IconHeart} alt="icon-heart" />
           </Button>
         </div>
         <Separator orientation="vertical h-full" />
