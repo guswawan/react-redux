@@ -10,6 +10,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,6 +20,13 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+
+const loginFormSchema = z.object({
+  email: z.string().email('Your email has to be in a valid format'),
+  password: z.string().min(8, 'Your password is under 8 characters'),
+});
 
 function LoginPage() {
   const form = useForm({
@@ -26,6 +34,8 @@ function LoginPage() {
       email: '',
       password: '',
     },
+    resolver: zodResolver(loginFormSchema),
+    reValidateMode: 'onSubmit',
   });
 
   const [isChecked, setIsChecked] = useState(false);
@@ -69,8 +79,9 @@ function LoginPage() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="your@mail.com" />
+                      <Input {...field} />
                     </FormControl>
+                    <FormDescription>ex. your@mail.com</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -84,10 +95,12 @@ function LoginPage() {
                     <FormControl>
                       <Input
                         {...field}
-                        placeholder="********"
                         type={isChecked ? 'text' : 'password'}
                       />
                     </FormControl>
+                    <FormDescription>
+                      Password has to be 8 characters or more
+                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
